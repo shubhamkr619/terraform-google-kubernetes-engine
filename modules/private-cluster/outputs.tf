@@ -113,6 +113,11 @@ output "http_load_balancing_enabled" {
   value       = local.cluster_http_load_balancing_enabled
 }
 
+output "gke_backup_agent_config" {
+  description = "Whether gke backup agent config is enabled"
+  value       = local.gke_backup_agent_config
+}
+
 output "horizontal_pod_autoscaling_enabled" {
   description = "Whether horizontal pod autoscaling enabled"
   value       = local.cluster_horizontal_pod_autoscaling_enabled

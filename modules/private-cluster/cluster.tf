@@ -127,6 +127,10 @@ resource "google_container_cluster" "primary" {
       disabled = !var.http_load_balancing
     }
 
+    gke_backup_agent_config {
+      disabled = !var.gke_backup_agent_config
+    }
+
     horizontal_pod_autoscaling {
       disabled = !var.horizontal_pod_autoscaling
     }
